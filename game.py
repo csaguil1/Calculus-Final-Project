@@ -32,7 +32,14 @@ class Enemy:
         self.atk = atk
         self.hp = hp
 
-back = pygame.image.load("campus.png")
+bg1 = pygame.image.load("campus.png")
+bg2 = pygame.image.load("scene 1.png")
+bg3 = pygame.image.load("scene 2.png")
+bg4 = pygame.image.load("scene 3.png")
+bg5 = pygame.image.load("scene 4.png")
+winbg = pygame.image.load("win.png")
+losebg = pygame.image.load("lose.png")
+
 
 def text_objects(text, font, color):
     """displays text"""
@@ -42,14 +49,31 @@ def text_objects(text, font, color):
 def text_box(text):
     """displays text in a text box similar to those of classic games"""
 
-    pygame.draw.rect(window, black, (50, 400, 700, 150))
-    pygame.draw.rect(window, white, (55, 405, 690, 140))
-    pygame.draw.rect(window, black, (60, 410, 680, 130))
+    pygame.draw.rect(window, black, (50, 350, 750, 140))
+    pygame.draw.rect(window, white, (55, 355, 740, 130))
+    pygame.draw.rect(window, black, (60, 360, 730, 120))
 
-    smallText = pygame.font.SysFont("comicsansms",10)
+    smallText = pygame.font.SysFont("comicsansms",20)
     TextSurf, TextRect = text_objects(text, smallText, white)
-    TextRect.center = (400, 475)
+    TextRect.center = (415, 415)
     window.blit(TextSurf, TextRect)
+
+def win():
+    """screen if they win the game"""
+    window.blit(winbg, (0,0))
+    pygame.display.update()
+    
+def lose():
+    """sceen if they lose the game"""
+    window.blit(losebg, (0,0))
+    pygame.display.update()
+
+def scene():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("test test")
+    pygame.display.update()
+
     
 run = False
 
@@ -66,9 +90,7 @@ while not run:
         count += 1
 
     if count == 0:
-        window.blit(back, (0,0))
-        text_box("test test")
-        pygame.display.update()
+        win()
 
 pygame.quit()
 quit()
