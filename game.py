@@ -40,7 +40,6 @@ bg5 = pygame.image.load("scene 4.png")
 winbg = pygame.image.load("win.png")
 losebg = pygame.image.load("lose.png")
 
-
 def text_objects(text, font, color):
     """displays text"""
     textSurface = font.render(text, True, color)
@@ -68,13 +67,48 @@ def lose():
     window.blit(losebg, (0,0))
     pygame.display.update()
 
-def scene():
+def scene1():
     """opening scene"""
     window.blit(bg1, (0,0))
-    text_box("test test")
+    text_box("Press Space to Continue")
     pygame.display.update()
 
-    
+def scene2():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("Today is your first day at Magnet!")
+    pygame.display.update()
+
+def scene3():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("Are you excited?")
+    pygame.display.update()
+
+def scene4():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("well you shouldn't be!")
+    pygame.display.update()
+
+def scene5():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("lets go!")
+    pygame.display.update()
+
+def scene6():
+    """opening scene"""
+    window.blit(bg1, (0,0))
+    text_box("lets go!")
+    pygame.display.update()
+
+def scene7():
+    """opening scene"""
+    window.blit(bg2, (0,0))
+    text_box("you only took one step forward?? ok i guess ://")
+    pygame.display.update()
+
 run = False
 
 while not run:
@@ -90,7 +124,19 @@ while not run:
         count += 1
 
     if count == 0:
-        win()
+        scene1()
+    elif count == 1:
+        scene2()
+    elif count == 2:
+        scene3()
+    elif count == 3:
+        scene4()
+    elif count == 4:
+        scene5()
+    elif count == 5:
+        scene6()
+    elif count == 6:
+        scene7()
 
 pygame.quit()
 quit()
