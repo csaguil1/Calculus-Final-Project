@@ -238,7 +238,7 @@ def scene28():
     """scene"""
     window.blit(bg3, (0,0))
     window.blit(dra, (100, 100))
-    text_box("draesel: ah sorry about that, I didn't see you there")
+    text_box("____ : ah sorry about that, I didn't see you there. my name is mrs. draesel")
     pygame.display.update()
 
 def scene29():
@@ -352,6 +352,166 @@ def scene44():
     text_box("what a nice person! let's keep heading to class though.")
     pygame.display.update()
 
+def scene45():
+    """scene"""
+    window.blit(bg4, (0,0))
+    text_box("stairs? are you kidding me? i have to do physical activity?? :((((")
+    pygame.display.update()
+    
+def scene46():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("____: WOAH!!! stop right there. don't go any further.")
+    pygame.display.update()
+
+def scene47():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("who is that ???")
+    pygame.display.update()
+
+def scene48():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: my name is jeff tan. not jeffrey. not jefferson. not teff jan. just jeff tan.")
+    pygame.display.update()
+
+def scene49():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("huh. but why can't you go to class??")
+    pygame.display.update()
+
+def scene50():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: its only been your first day, but i've heard a lot about you already.")
+    pygame.display.update()
+
+def scene51():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: according to some people you're some sort of math genius.")
+    pygame.display.update()
+
+def scene52():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: sorry to burst your bubble but there's only enough room for one math genius at this school.")
+    pygame.display.update()
+
+def scene53():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: hint: its me.")
+    pygame.display.update()
+
+def scene54():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("SO I CHALLENGE YOU TO A DUEL!!!!!! i'll ask you several calc questions.")
+    pygame.display.update()
+
+def scene55():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: if and only if you answer them all correctly i will admit defeat.")
+    pygame.display.update()
+
+def scene56():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: are you ready?")
+    pygame.display.update()
+
+def scene57():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: what theorem can be considered as Rolle's theorem but tilted?")
+    pygame.display.update()
+
+def scene58():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("press 1 [intermediate value theorem], 2 [mean value theorem], or 3 [extreme value theorem]")
+    pygame.display.update()
+
+def scene59():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: AAAA NO!! IT'S OK I STILL HAVE 2 MORE TRIES TO DEFEAT YOU !!!")
+    pygame.display.update()
+
+def scene60():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: When the function is concave down the slope is _____ ?")
+    pygame.display.update()
+
+def scene61():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("press 1 [decreasing], 2 [increasing], or 3 [constant]")
+    pygame.display.update()
+
+def scene62():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: HOW DID YOU KNOW THAT? I GUESS I'LL HAVE TO PULL PUT THE BIG GUNS FOR THIS LAST QUESTION!!")
+    pygame.display.update()
+
+def scene63():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("jeff: how would you find out where the function is increasing, decreasing, or constant?")
+    pygame.display.update()
+
+def scene64():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("press 1 [first derivative test], 2 [disk method], 3 [by jumping up and down until you become one with the function]")
+    pygame.display.update()
+
+def scene65():
+    """scene"""
+    window.blit(bg4, (0,0))
+    window.blit(jeff, (100,100))
+    text_box("NANI???!!!??? HOW COULD THIS BE?????? I'VE BEEN BEATEN,,,,,")
+    pygame.display.update()
+
+def scene66():
+    """scene"""
+    window.blit(bg4, (0,0))
+    text_box("he fades into dust. you're confused but it's 7:59. you have one minute to get to class. you better hurry.")
+    pygame.display.update()
+
+def scene67():
+    """scene"""
+    window.blit(bg5, (0,0))
+    text_box("you walk up the stairs and go through the doors. you're right in front of your calc class!")
+    pygame.display.update()
+
+
+
 run = False
 
 while not run:
@@ -401,9 +561,9 @@ while not run:
         if key[pygame.K_1]:
             count += 1
         elif key[pygame.K_2]:
-            count == 500
+            lose()
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 16:
         scene17()
     elif count == 17:
@@ -490,6 +650,76 @@ while not run:
         scene43()
     elif count == 43:
         scene44()
+    elif count == 44:
+        scene45()
+    elif count == 45:
+        scene46()
+    elif count == 46:
+        scene47()
+    elif count == 47:
+        scene48()
+    elif count == 48:
+        scene49()
+    elif count == 49:
+        scene50()
+    elif count == 50:
+        scene51()
+    elif count == 51:
+        scene52()
+    elif count == 52:
+        scene53()
+    elif count == 53:
+        scene54()
+    elif count == 54:
+        scene55()
+    elif count == 55:
+        scene56()
+    elif count == 56:
+        scene57()
+    elif count == 57:
+        scene58()
+        if key[pygame.K_1]:
+            count == 500
+        elif key[pygame.K_2]:
+            count += 1
+        elif key[pygame.K_3]:
+            count == 500
+    elif count == 58:
+        scene59()
+    elif count == 59:
+        scene60()
+    elif count == 60:
+        scene61()
+        if key[pygame.K_1]:
+            count += 1
+        elif key[pygame.K_2]:
+            count == 500
+        elif key[pygame.K_3]:
+            count == 500
+    elif count == 61:
+        scene62()
+    elif count == 62:
+        scene63()
+    elif count == 63:
+        scene64()
+        if key[pygame.K_1]:
+            count += 1
+        elif key[pygame.K_2]:
+            count == 500
+        elif key[pygame.K_3]:
+            count == 500
+    elif count == 64:
+        scene65()
+    elif count == 65:
+        scene66()
+    elif count == 66:
+        scene67()
+    elif count == 67:
+        scene68()
+    #elif count == 68:
+     #   scene45()
+    #elif count == 69:
+       # scene45()
     elif count == 500:
         lose()
 
