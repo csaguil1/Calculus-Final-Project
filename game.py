@@ -29,6 +29,7 @@ raf = pygame.image.load("raf.png")
 dra = pygame.image.load("dra.png")
 jeff = pygame.image.load("jeff.png")
 wei = pygame.image.load("wei.png")
+shell = pygame.image.load("Shell.png")
 
 def text_objects(text, font, color):
     """displays text"""
@@ -418,7 +419,7 @@ def scene54():
     """scene"""
     window.blit(bg4, (0,0))
     window.blit(jeff, (100,100))
-    text_box("SO I CHALLENGE YOU TO A DUEL!!!!!! i'll ask you several calc questions.")
+    text_box("jeff: SO I CHALLENGE YOU TO A DUEL!!!!!! i'll ask you several calc questions.")
     pygame.display.update()
 
 def scene55():
@@ -510,7 +511,110 @@ def scene67():
     text_box("you walk up the stairs and go through the doors. you're right in front of your calc class!")
     pygame.display.update()
 
+def scene68():
+    """scene"""
+    window.blit(bg5, (0,0))
+    text_box("suddenly a man appears")
+    pygame.display.update()
 
+def scene69():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("____: hello! my name is Mr. Weisser! i'm your calculus teacher!")
+    pygame.display.update()
+
+def scene70():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: before you enter class i'm going to challenge you to something i only offer new students")
+    pygame.display.update()
+
+def scene71():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: basically i'll give you a small quiz. if you get them all right i lose and if you don't i win.")
+    pygame.display.update()
+
+def scene72():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: if you beat the teacher (me) you become the teacher")
+    pygame.display.update()
+
+def scene73():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: let's start! What method uses this formula?")
+    window.blit(shell, (600, 390))
+    pygame.display.update()
+
+def scene74():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("press 1 [disk], 2 [washer], or 3 [shell]")
+    pygame.display.update()
+
+def scene75():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: great job! next question: What is the 'opposite' of the chain rule?")
+    pygame.display.update()
+
+def scene76():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("press 1 [change of bounds], 2 [u sub], or 3 [quotient rule]")
+    pygame.display.update()
+
+def scene77():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: im actually getting kind of nervous;;; but i'm the final boss you can't win!!")
+    pygame.display.update()
+
+def scene78():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: What is the indefinite integral of 1/x or x^-1?")
+    pygame.display.update()
+
+def scene79():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("press 1 [loglxl + C], 2 [lnlxl], or 3 [lnlxl + C]")
+    pygame.display.update()
+
+def scene80():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: great job but i kind of can't let you just take my job.")
+    pygame.display.update()
+
+def scene81():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("Mr. Weisser: what if i give you a win screen instead??")
+    pygame.display.update()
+
+def scene82():
+    """scene"""
+    window.blit(bg5, (0,0))
+    window.blit(wei, (100,100))
+    text_box("ok.")
+    pygame.display.update()
 
 run = False
 
@@ -571,11 +675,11 @@ while not run:
     elif count == 18:
         scene19()
         if key[pygame.K_1]:
-            count == 500
+            lose()
         elif key[pygame.K_2]:
             count += 1
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 19:
         scene20()
     elif count == 20:
@@ -583,11 +687,11 @@ while not run:
     elif count == 21:
         scene22()
         if key[pygame.K_1]:
-            count == 500
+            lose()
         elif key[pygame.K_2]:
             count += 1
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 22:
         scene23()
     elif count == 23:
@@ -615,9 +719,9 @@ while not run:
     elif count == 34:
         scene35()
         if key[pygame.K_1]:
-            count == 500
+            lose()
         elif key[pygame.K_2]:
-            count == 500
+            lose()
         elif key[pygame.K_3]:
             count += 1
     elif count == 35:
@@ -629,9 +733,9 @@ while not run:
         if key[pygame.K_1]:
             count += 1
         elif key[pygame.K_2]:
-            count == 500
+            lose()
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 38:
         scene39()
     elif count == 39:
@@ -639,11 +743,11 @@ while not run:
     elif count == 40:
         scene41()
         if key[pygame.K_1]:
-            count == 500
+            lose()
         elif key[pygame.K_2]:
             count += 1
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 41:
         scene42()
     elif count == 42:
@@ -679,11 +783,11 @@ while not run:
     elif count == 57:
         scene58()
         if key[pygame.K_1]:
-            count == 500
+            lose()
         elif key[pygame.K_2]:
             count += 1
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 58:
         scene59()
     elif count == 59:
@@ -693,9 +797,9 @@ while not run:
         if key[pygame.K_1]:
             count += 1
         elif key[pygame.K_2]:
-            count == 500
+            lose()
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 61:
         scene62()
     elif count == 62:
@@ -705,9 +809,9 @@ while not run:
         if key[pygame.K_1]:
             count += 1
         elif key[pygame.K_2]:
-            count == 500
+            lose()
         elif key[pygame.K_3]:
-            count == 500
+            lose()
     elif count == 64:
         scene65()
     elif count == 65:
@@ -716,12 +820,54 @@ while not run:
         scene67()
     elif count == 67:
         scene68()
-    #elif count == 68:
-     #   scene45()
-    #elif count == 69:
-       # scene45()
-    elif count == 500:
-        lose()
+    elif count == 68:
+        scene69()
+    elif count == 69:
+        scene70()
+    elif count == 70:
+        scene71()
+    elif count == 71:
+        scene72()
+    elif count == 72:
+        scene73()
+    elif count == 73:
+        scene74()
+        if key[pygame.K_1]:
+            lose()
+        elif key[pygame.K_2]:
+            lose()
+        elif key[pygame.K_3]:
+            count += 1
+    elif count == 74:
+        scene75()
+    elif count == 75:
+        scene76()
+        if key[pygame.K_1]:
+            lose()
+        elif key[pygame.K_2]:
+            count += 1
+        elif key[pygame.K_3]:
+            lose()
+    elif count == 76:
+        scene77()
+    elif count == 77:
+        scene78()
+    elif count == 78:
+        scene79()
+        if key[pygame.K_1]:
+            lose()
+        elif key[pygame.K_2]:
+            lose()
+        elif key[pygame.K_3]:
+            count += 1
+    elif count == 79:
+        scene80()
+    elif count == 80:
+        scene81()
+    elif count == 81:
+        scene82()
+    elif count == 82:
+        win()
 
 pygame.quit()
 quit()
